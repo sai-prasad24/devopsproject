@@ -2,10 +2,12 @@
 FROM openjdk:11-jdk-slim
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copy the application JAR file into the container
-COPY target/sampleapp.war app.jar
+COPY target/sampleapp.war app/sampleapp.war
+
+EXPOSE 8080
 
 # Specify the command to run your application
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "sampleapp.war"]
