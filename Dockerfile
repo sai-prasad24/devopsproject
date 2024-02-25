@@ -5,7 +5,7 @@ FROM openjdk:11-jdk-slim
 WORKDIR /app
 
 # Copy the application JAR file into the container
-COPY target/sampleapp.war app/sampleapp.war
+COPY target/sampleapp.war sampleapp.war
 
 EXPOSE 8080
 
