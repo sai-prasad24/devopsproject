@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: saiprasad957/projects
+        image: saiprasad957/saihrudai:v1
         ports:
           - containerPort: 8080
 ---
